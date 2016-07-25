@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VideoAnimationController.h"
 
 @interface ViewController2 : UIViewController
+
+@property VideoAnimationController *animationController;
 
 @end

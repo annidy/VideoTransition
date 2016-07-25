@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface VideoAnimationController : NSObject
+@interface VideoAnimationController : NSObject<UIViewControllerAnimatedTransitioning>
+
+@property (nonatomic, assign) BOOL reverse;
+@property UIView *previewView;
 
 @end

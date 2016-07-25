@@ -8,7 +8,7 @@
 
 #import "ViewController2.h"
 
-@interface ViewController2 ()
+@interface ViewController2 ()<UIViewControllerTransitioningDelegate, UINavigationControllerDelegate>
 
 @end
 
@@ -24,6 +24,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    self.navigationController.delegate = self;
+    self.navigationController.navigationBar.hidden = NO;
+    
+}
+
 /*
 #pragma mark - Navigation
 
@@ -34,4 +40,12 @@
 }
 */
 
+- (id<UIViewControllerAnimatedTransitioning>) navigationController:(UINavigationController *)navigationController
+                                   animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                fromViewController:(UIViewController *)fromVC
+                                                  toViewController:(UIViewController *)toVC
+{
+    self.animationController.reverse = YES;
+    return self.animationController;
+}
 @end

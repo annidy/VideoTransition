@@ -13,6 +13,8 @@
 		9195D7681D3FAB6E004BA302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9195D7661D3FAB6E004BA302 /* Main.storyboard */; };
 		9195D76A1D3FAB6E004BA302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9195D7691D3FAB6E004BA302 /* Assets.xcassets */; };
 		9195D76D1D3FAB6E004BA302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9195D76B1D3FAB6E004BA302 /* LaunchScreen.storyboard */; };
+		91A6860A1D40A67E001E51BA /* VideoAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A686091D40A67E001E51BA /* VideoAnimationController.m */; };
+		91A6860D1D40B225001E51BA /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A6860C1D40B225001E51BA /* ViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		9195D7691D3FAB6E004BA302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9195D76C1D3FAB6E004BA302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9195D76E1D3FAB6E004BA302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91A686081D40A67E001E51BA /* VideoAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoAnimationController.h; sourceTree = "<group>"; };
+		91A686091D40A67E001E51BA /* VideoAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoAnimationController.m; sourceTree = "<group>"; };
+		91A6860B1D40B225001E51BA /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		91A6860C1D40B225001E51BA /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				9195D7631D3FAB6E004BA302 /* ViewController.h */,
 				9195D7641D3FAB6E004BA302 /* ViewController.m */,
 				9195D7661D3FAB6E004BA302 /* Main.storyboard */,
+				91A686081D40A67E001E51BA /* VideoAnimationController.h */,
+				91A686091D40A67E001E51BA /* VideoAnimationController.m */,
+				91A6860B1D40B225001E51BA /* ViewController2.h */,
+				91A6860C1D40B225001E51BA /* ViewController2.m */,
 				9195D7691D3FAB6E004BA302 /* Assets.xcassets */,
 				9195D76B1D3FAB6E004BA302 /* LaunchScreen.storyboard */,
 				9195D76E1D3FAB6E004BA302 /* Info.plist */,
@@ -152,7 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A6860A1D40A67E001E51BA /* VideoAnimationController.m in Sources */,
 				9195D7651D3FAB6E004BA302 /* ViewController.m in Sources */,
+				91A6860D1D40B225001E51BA /* ViewController2.m in Sources */,
 				9195D7621D3FAB6E004BA302 /* AppDelegate.m in Sources */,
 				9195D75F1D3FAB6E004BA302 /* main.m in Sources */,
 			);
@@ -269,6 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VideoTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.annidy.test.VideoTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -280,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VideoTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.annidy.test.VideoTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -305,6 +319,7 @@
 				9195D7731D3FAB6E004BA302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
